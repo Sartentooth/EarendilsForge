@@ -15,10 +15,10 @@
 
 ### 🌐 Infraestructura Web
 
-- [ ] Agregar Tailwind CSS
-- [ ] Crear layout base (`BaseLayout.astro`)
-- [ ] Crear componentes de navegación (`Header`) y pie (`Footer`)
-- [ ] Enrutar las páginas principales con navegación funcional
+- [x] Agregar Tailwind CSS
+- [x] Crear layout base (`BaseLayout.astro`)
+- [x] Crear componentes de navegación (`Header`) y pie (`Footer`)
+- [x] Enrutar las páginas principales con navegación funcional
 
 ---
 
