@@ -1,11 +1,36 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout>
+  <section class="relative bg-slate-950 text-white min-h-[80vh] flex items-center justify-center px-4">
+    <div class="absolute inset-0 bg-[url('/hero-forge.png')] bg-cover bg-center opacity-20"></div>
+
+    <div class="relative z-10 text-center max-w-2xl">
+      <h1 class="text-4xl sm:text-6xl font-bold text-amber-400 drop-shadow-md">
+        Eärendil’s Forge
+      </h1>
+      <p class="mt-4 text-lg sm:text-xl text-slate-200">
+        Forjamos ideas en 3D. Impresión, diseño y venta de insumos con alma fantástica.
+      </p>
+
+      <a
+        href="/contacto"
+        class="mt-8 inline-block bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-6 py-3 rounded-lg shadow-lg transition"
+      >
+        Contactanos
+      </a>
+    </div>
+  </section>
+
+  <section class="py-16 bg-slate-900 text-center text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-amber-400 mb-4">¿Qué hacemos?</h2>
+      <p class="text-lg text-slate-300">
+        Desde piezas únicas hasta lotes industriales. Modelamos, imprimimos, asesoramos y conectamos.
+        Ya sea para fanáticos del diseño, emprendedores o empresas, tenemos una forja para vos.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+

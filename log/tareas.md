@@ -24,7 +24,12 @@
 
 ### 📄 Páginas principales
 
-- [ ] `index.astro` — Página de Inicio
+- [x] `index.astro` — Página de Inicio
+  - [x] Layout general funcionando
+  - [x] Header responsivo con React
+  - [x] Imagen de fondo colocada (/public/hero-forja.jpg)
+  - [x] Sección hero + llamado a la acción
+  - [x] Intro de "¿Qué hacemos?" completada
 - [ ] `quienes-somos.astro` — Quiénes somos
 - [ ] `productos.astro` — Servicios y productos
   - [ ] Impresiones 3D que nos gusta
