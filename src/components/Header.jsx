@@ -12,7 +12,7 @@ export default function Header() {
             href="/"
             className="text-2xl font-bold text-amber-400 hover:text-amber-300"
           >
-            Eärendil’s Forge
+            Earendil’s Forge
           </a>
 
           {/* Botón móvil */}
