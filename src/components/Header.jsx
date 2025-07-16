@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -31,26 +31,32 @@ export default function Header() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d={
-                  open
-                    ? 'M6 18L18 6M6 6l12 12'
-                    : 'M4 6h16M4 12h16M4 18h16'
-                }
+                d={open ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
               />
             </svg>
           </button>
 
           {/* Menú de escritorio y mobile */}
           <div
-            className={`sm:flex flex-col sm:flex-row sm:items-center gap-4 absolute sm:static top-16 left-0 w-full sm:w-auto bg-slate-900 px-4 py-4 sm:py-0 sm:gap-6 ${
-              open ? 'block' : 'hidden sm:block'
-            }`}
+            className={`sm:flex flex-col sm:flex-row sm:items-center gap-4 ${
+              open ? "block" : "hidden sm:block"
+            } w-full sm:w-auto bg-slate-900 px-4 py-4 sm:py-0 sm:gap-6`}
           >
-            <a href="/" className="block hover:text-amber-300">Inicio</a>
-            <a href="/quienes-somos" className="block hover:text-amber-300">Quiénes somos</a>
-            <a href="/productos" className="block hover:text-amber-300">Productos</a>
-            <a href="/galeria" className="block hover:text-amber-300">Galería</a>
-            <a href="/contacto" className="block hover:text-amber-300">Contacto</a>
+            <a href="/" className="block hover:text-amber-300">
+              Inicio
+            </a>
+            <a href="/quienes-somos" className="block hover:text-amber-300">
+              Quiénes somos
+            </a>
+            <a href="/productos" className="block hover:text-amber-300">
+              Productos
+            </a>
+            <a href="/galeria" className="block hover:text-amber-300">
+              Galería
+            </a>
+            <a href="/contacto" className="block hover:text-amber-300">
+              Contacto
+            </a>
           </div>
         </div>
       </div>
