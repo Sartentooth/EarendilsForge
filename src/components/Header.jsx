@@ -42,19 +42,19 @@ export default function Header() {
               open ? "block" : "hidden sm:block"
             } w-full sm:w-auto bg-slate-900 px-4 py-4 sm:py-0 sm:gap-6`}
           >
-            <a href="/" className="block hover:text-amber-300">
+            <a href="/EarendilsForge/" className="block hover:text-amber-300">
               Inicio
             </a>
-            <a href="/quienes-somos" className="block hover:text-amber-300">
+            <a href="/EarendilsForge/quienes-somos" className="block hover:text-amber-300">
               Quiénes somos
             </a>
-            <a href="/productos" className="block hover:text-amber-300">
+            <a href="/EarendilsForge/productos" className="block hover:text-amber-300">
               Productos
             </a>
-            <a href="/galeria" className="block hover:text-amber-300">
+            <a href="/EarendilsForge/galeria" className="block hover:text-amber-300">
               Galería
             </a>
-            <a href="/contacto" className="block hover:text-amber-300">
+            <a href="/EarendilsForge/contacto" className="block hover:text-amber-300">
               Contacto
             </a>
           </div>
