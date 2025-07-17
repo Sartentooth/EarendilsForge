@@ -4,25 +4,20 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-slate-900 shadow-md">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
-          {/* Logo / Título */}
-          <a
-            href="/"
-            className="text-2xl font-bold text-amber-400 hover:text-amber-300"
-          >
+    <nav className="px-10 py-6 sm:flex sm:items-center sm:justify-between bg-slate-900 shadow-md">
+        <section className="flex justify-between items-center h-16">
+          <a href="/EarendilsForge/" 
+          className="text-2xl font-bold text-amber-400 hover:text-amber-300">
             Earendil’s Forge
           </a>
 
-          {/* Botón móvil */}
           <button
             className="sm:hidden text-amber-400 focus:outline-none"
             aria-label="Toggle menu"
             onClick={() => setOpen(!open)}
           >
             <svg
-              className="h-6 w-6"
+              className="h-6 w-6 fill-current"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -35,31 +30,30 @@ export default function Header() {
               />
             </svg>
           </button>
+        </section>
 
-          {/* Menú de escritorio y mobile */}
-          <div
-            className={`sm:flex flex-col sm:flex-row sm:items-center gap-4 ${
-              open ? "block" : "hidden sm:block"
-            } w-full sm:w-auto bg-slate-900 px-4 py-4 sm:py-0 sm:gap-6`}
-          >
-            <a href="/EarendilsForge/" className="block hover:text-amber-300">
-              Inicio
-            </a>
-            <a href="/EarendilsForge/quienes-somos" className="block hover:text-amber-300">
-              Quiénes somos
-            </a>
-            <a href="/EarendilsForge/productos" className="block hover:text-amber-300">
-              Productos
-            </a>
-            <a href="/EarendilsForge/galeria" className="block hover:text-amber-300">
-              Galería
-            </a>
-            <a href="/EarendilsForge/contacto" className="block hover:text-amber-300">
-              Contacto
-            </a>
-          </div>
+        {/* Menú: mobile y desktop */}
+        <div
+          className={`${
+            open ? "block" : "hidden"
+          } sm:flex flex-col items-start mt-3 gap-4 sm:flex-row sm:m-0`}
+        >
+          <a href="/EarendilsForge/" className="block py-2 hover:text-amber-300">
+            Inicio
+          </a>
+          <a href="/EarendilsForge/quienes-somos" className="block py-2 hover:text-amber-300">
+            Quiénes somos
+          </a>
+          <a href="/EarendilsForge/productos" className="block py-2 hover:text-amber-300">
+            Productos
+          </a>
+          <a href="/EarendilsForge/galeria" className="block py-2 hover:text-amber-300">
+            Galería
+          </a>
+          <a href="/EarendilsForge/contacto" className="block py-2 hover:text-amber-300">
+            Contacto
+          </a>
         </div>
-      </div>
     </nav>
   );
 }
