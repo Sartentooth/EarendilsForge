@@ -30,13 +30,13 @@
   - [x] Imagen de fondo colocada (/public/hero-forja.jpg)
   - [x] Sección hero + llamado a la acción
   - [x] Intro de "¿Qué hacemos?" completada
-- [ ] `quienes-somos.astro` — Quiénes somos
-- [ ] `productos.astro` — Servicios y productos
-  - [ ] Impresiones 3D que nos gusta
-  - [ ] A pedido
-  - [ ] B2B
-  - [ ] Modelos 3D STL/OBJ
-- [ ] `galeria.astro` — Showroom
+- [x] `quienes-somos.astro` — Quiénes somos
+- [x] `productos.astro` — Servicios y productos
+  - [x] Impresiones 3D que nos gusta
+  - [x] A pedido y trabajos a medida
+  - [x] B2B - Impresoras 3D, insumos, etc
+  - [x] Modelos 3D STL/OBJ
+- [x] `galeria.astro` — Showroom
 - [ ] `contacto.astro` — Formulario + WhatsApp
 
 ---

@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contacto">
+  <section class="max-w-xl mx-auto my-10 px-4 py-8 bg-[#1f2937] rounded-lg shadow-lg text-white">
+    <h1 class="text-4xl font-bold text-amber-400 text-center mb-2">Contactanos</h1>
+    <p class="text-center text-gray-300 mb-6">
+      Unite a nuestra comunidad de forjadores de ideas. Escribinos para coordinar tu pedido,
+      consulta o simplemente compartir tu pasión por el modelado 3D.
+    </p>
+
+    <form name="contacto" method="POST" data-netlify="true" class="flex flex-col gap-4">
+      <label class="flex flex-col">
+        <span class="font-semibold mb-1">Nombre completo</span>
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Ej: Eärendil Smith"
+          minlength="3"
+          required
+          class="p-2 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+        />
+      </label>
+
+      <label class="flex flex-col">
+        <span class="font-semibold mb-1">Email</span>
+        <input
+          type="email"
+          name="email"
+          placeholder="tuemail@ejemplo.com"
+          required
+          class="p-2 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+        />
+      </label>
+
+      <label class="flex flex-col">
+        <span class="font-semibold mb-1">Teléfono</span>
+        <input
+          type="tel"
+          name="telefono"
+          placeholder="+54 9 11 1234-5678"
+          pattern="\+54\s9\s\d{2,4}\s\d{4}-\d{4}"
+          title="Formato: +54 9 11 1234-5678"
+          required
+          class="p-2 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+        />
+      </label>
+
+      <label class="flex flex-col">
+        <span class="font-semibold mb-1">Tu consulta</span>
+        <textarea
+          name="mensaje"
+          rows="5"
+          placeholder="Contanos tu idea, proyecto o duda..."
+          required
+          class="p-2 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 resize-y"
+        ></textarea>
+      </label>
+
+      <div class="flex justify-between gap-4 mt-4">
+        <button
+          type="submit"
+          class="flex-1 py-2 rounded-md bg-amber-500 hover:bg-amber-600 text-white font-semibold transition"
+        >
+          Enviar
+        </button>
+        <button
+          type="reset"
+          class="flex-1 py-2 rounded-md bg-gray-600 hover:bg-gray-700 text-white font-semibold transition"
+        >
+          Reset
+        </button>
+      </div>
+    </form>
+
+    <div class="text-center mt-8">
+      <p class="text-gray-300 mb-2">¿Preferís charlar por WhatsApp?</p>
+      <a
+        href="https://wa.me/549XXXXXXXXXX"
+        class="text-amber-400 font-semibold hover:underline"
+        target="_blank"
+      >
+        Hablá con nosotros
+      </a>
+    </div>
+  </section>
+</BaseLayout>

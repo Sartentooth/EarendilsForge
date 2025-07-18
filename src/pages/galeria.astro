@@ -1,0 +1,125 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Galería">
+  <section class="max-w-7xl mx-auto px-4 py-12">
+    <h1 class="text-3xl sm:text-4xl font-bold text-amber-400 text-center mb-10">
+      Showroom de Creaciones
+    </h1>
+
+    <!-- Filtros -->
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <button
+        class="filter-btn bg-slate-800 text-white px-4 py-2 rounded hover:bg-amber-500"
+        data-filter="all">Todo</button
+      >
+      <button
+        class="filter-btn bg-slate-800 text-white px-4 py-2 rounded hover:bg-amber-500"
+        data-filter="props">Props</button
+      >
+      <button
+        class="filter-btn bg-slate-800 text-white px-4 py-2 rounded hover:bg-amber-500"
+        data-filter="miniaturas">Miniaturas</button
+      >
+      <button
+        class="filter-btn bg-slate-800 text-white px-4 py-2 rounded hover:bg-amber-500"
+        data-filter="utilitarios">Utilitarios</button
+      >
+    </div>
+
+    <!-- Galería -->
+    <div
+      id="gallery"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    >
+      <img
+        src="/galeria/modelo1.jpg"
+        alt="Modelo 1"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/galeria/modelo2.jpg"
+        alt="Modelo 2"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item miniaturas"
+      />
+      <img
+        src="/galeria/modelo3.jpg"
+        alt="Modelo 3"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item utilitarios"
+      />
+      <img
+        src="/galeria/modelo4.jpg"
+        alt="Modelo 4"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/galeria/modelo5.jpg"
+        alt="Modelo 5"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item miniaturas"
+      />
+      <img
+        src="/galeria/modelo6.jpg"
+        alt="Modelo 6"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item utilitarios"
+      />
+      <img
+        src="/galeria/modelo7.jpg"
+        alt="Modelo 7"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+        />
+        <img
+        src="/galeria/modelo8.jpg"
+        alt="Modelo 8"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item utilitarios"
+        />
+        <img
+        src="/galeria/modelo9.jpg"
+        alt="Modelo 9"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+        />
+        <img
+        src="/galeria/modelo10.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+        />
+      <!-- Agregá más imágenes con sus clases correspondientes -->
+    </div>
+
+    <p class="text-center text-gray-400 mt-8">
+      ¿Querés ver más? ¡Escribinos para recibir el catálogo completo o seguirnos
+      en redes!
+    </p>
+  </section>
+
+  <!-- Script para filtrar -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".filter-btn");
+      const items = document.querySelectorAll(".filter-item");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.getAttribute("data-filter") || "";
+          items.forEach((item) => {
+            if (filter === "all" || item.classList.contains(filter)) {
+              item.classList.remove("hidden");
+            } else {
+              item.classList.add("hidden");
+            }
+          });
+        });
+      });
+    });
+  </script>
+</BaseLayout>

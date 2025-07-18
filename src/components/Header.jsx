@@ -4,7 +4,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="px-10 py-6 sm:flex sm:items-center sm:justify-between bg-slate-900 shadow-md">
+    <nav className="px-3 py-6 sm:flex sm:items-center sm:justify-between bg-slate-900 shadow-md">
         <section className="flex justify-between items-center h-16">
           <a href="/EarendilsForge/" 
           className="text-2xl font-bold text-amber-400 hover:text-amber-300">

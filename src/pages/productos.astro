@@ -1,0 +1,292 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Productos y Servicios">
+  <section class="bg-slate-900 py-16 px-4 text-white">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h1 class="text-4xl font-bold text-amber-400 mb-4">
+        Productos y Servicios
+      </h1>
+      <p class="text-lg text-gray-300">
+        Forjamos experiencias únicas a través de la impresión 3D. Explorá todo
+        lo que podemos hacer por vos.
+      </p>
+    </div>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 max-w-6xl mx-auto"
+    >
+      <!-- Tarjeta 1 -->
+      <div
+        class="bg-slate-800 rounded-2xl shadow-md p-6 hover:bg-slate-700 transition"
+      >
+        <h2 class="text-xl font-semibold text-amber-300 mb-2">
+          🎮 Impresiones que nos gustan
+        </h2>
+        <p class="text-sm text-gray-300 mb-4">
+          Figuras, props, espadas, miniaturas, piezas de coleccionismo. Diseños
+          que amamos y queremos compartir.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-4 py-2 rounded-md transition"
+        >
+          Ver galería
+        </a>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div
+        class="bg-slate-800 rounded-2xl shadow-md p-6 hover:bg-slate-700 transition"
+      >
+        <h2 class="text-xl font-semibold text-amber-300 mb-2">
+          🛠️ A pedido y trabajos únicos
+        </h2>
+        <p class="text-sm text-gray-300 mb-4">
+          Traé tu idea o necesidad y la hacemos realidad. Modelado, impresión y
+          acabado a medida.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-4 py-2 rounded-md transition"
+        >
+          Consultanos
+        </a>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div
+        class="bg-slate-800 rounded-2xl shadow-md p-6 hover:bg-slate-700 transition"
+      >
+        <h2 class="text-xl font-semibold text-amber-300 mb-2">🏭 Venta B2B</h2>
+        <p class="text-sm text-gray-300 mb-4">
+          Impresoras 3D, filamento PLA/ABS/Resina, kits de mantenimiento y más.
+          Soluciones para empresas o talleres.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-4 py-2 rounded-md transition"
+        >
+          Pedí info
+        </a>
+      </div>
+
+      <!-- Tarjeta 4 -->
+      <div
+        class="bg-slate-800 rounded-2xl shadow-md p-6 hover:bg-slate-700 transition"
+      >
+        <h2 class="text-xl font-semibold text-amber-300 mb-2">
+          📦 Modelos STL y OBJ
+        </h2>
+        <p class="text-sm text-gray-300 mb-4">
+          Venta de archivos digitales listos para imprimir. Creaciones propias y
+          diseños con licencia de autor.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-4 py-2 rounded-md transition"
+        >
+          Ver catálogo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Separador con ícono de yunke -->
+  <div class="flex justify-center my-8">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-10 h-10 text-amber-500 animate-bounce"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        d="M4 10h12l1 2h3v2h-3l-1 2H4v-2H2v-2h2v-2zM6 18h4v2H6v-2z"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </svg>
+  </div>
+
+  <!-- Bloque extendido de sección impresiones que nos gustan -->
+  <section
+    class="bg-slate-800 p-6 rounded-2xl max-w-6xl mx-auto mb-12 shadow-xl"
+  >
+    <h2 class="text-2xl sm:text-3xl text-amber-400 font-bold mb-4 text-center">
+      Impresiones que nos gustan
+    </h2>
+    <p class="text-gray-300 mb-6 text-center max-w-3xl mx-auto">
+      Este espacio es para mostrar lo que nos apasiona: props, miniaturas,
+      espadas, bustos, piezas de coleccionismo y más. Diseños que amamos hacer y
+      compartir. Porque la forja también es un lugar para crear con el alma.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <img
+        src="/galeria/espada-zelda.jpg"
+        alt="Espada Zelda"
+        class="rounded-xl shadow-lg"
+      />
+      <img
+        src="/galeria/guantelete-thanos.jpg"
+        alt="Guantelete Thanos"
+        class="rounded-xl shadow-lg"
+      />
+      <img
+        src="/galeria/miniatura-dragon.jpg"
+        alt="Miniatura dragón"
+        class="rounded-xl shadow-lg"
+      />
+    </div>
+  </section>
+
+  <!-- Separador con ícono bombilla de idea -->
+  <div class="flex justify-center my-8">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-10 h-10 text-amber-500 animate-pulse"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M11 3a1 1 0 00-1 1v2.586l-.293.293A1 1 0 0010 9h4a1 1 0 00.707-1.707L14 6.586V4a1 1 0 00-1-1h-2zM8 14h8v2a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2z"
+      ></path>
+    </svg>
+  </div>
+  <!-- Bloque extendido de sección a pedido y trabajos únicos -->
+  <section
+    class="bg-slate-800 p-6 rounded-2xl max-w-6xl mx-auto mb-12 shadow-xl"
+  >
+    <h2 class="text-2xl sm:text-3xl text-amber-400 font-bold mb-4 text-center">
+      A pedido y trabajos únicos
+    </h2>
+    <p class="text-gray-300 mb-6 text-center max-w-3xl mx-auto">
+      ¿Tenés una idea o un proyecto especial? Lo modelamos, lo adaptamos y lo
+      imprimimos en la mejor calidad. Props personalizados, piezas funcionales o
+      decorativas, miniaturas únicas... ¡Lo que imagines, lo forjamos!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <img
+        src="/galeria/soporte-casco.jpg"
+        alt="Soporte casco personalizado"
+        class="rounded-xl shadow-lg"
+      />
+      <img
+        src="/galeria/modelado-3d.jpg"
+        alt="Modelado 3D a pedido"
+        class="rounded-xl shadow-lg"
+      />
+      <img
+        src="/galeria/miniatura-unica.jpg"
+        alt="Miniatura personalizada"
+        class="rounded-xl shadow-lg"
+      />
+    </div>
+  </section>
+
+  <!-- Separador con ícono engranaje -->
+  <div class="flex justify-center my-8">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-10 h-10 text-amber-500 transition-transform duration-300 hover:scale-110 hover:text-yellow-400"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9.75 3a1 1 0 00-1 1v1.2a7.003 7.003 0 00-2.4 1.4L5.3 5.7a1 1 0 00-1.4 0L2.7 6.9a1 1 0 000 1.4l1.3 1.3a7.003 7.003 0 001.4 2.4H4a1 1 0 000 2h1.2a7.003 7.003 0 001.4 2.4L5.3 18.3a1 1 0 000 1.4l1.2 1.2a1 1 0 001.4 0l1.3-1.3a7.003 7.003 0 002.4 1.4V21a1 1 0 001 1h2a1 1 0 001-1v-1.2a7.003 7.003 0 002.4-1.4l1.3 1.3a1 1 0 001.4 0l1.2-1.2a1 1 0 000-1.4l-1.3-1.3a7.003 7.003 0 001.4-2.4H21a1 1 0 001-1v-2a1 1 0 00-1-1h-1.2a7.003 7.003 0 00-1.4-2.4l1.3-1.3a1 1 0 000-1.4l-1.2-1.2a1 1 0 00-1.4 0l-1.3 1.3a7.003 7.003 0 00-2.4-1.4V4a1 1 0 00-1-1h-2zM12 15a3 3 0 110-6 3 3 0 010 6z"
+      ></path>
+    </svg>
+  </div>
+  <!-- Bloque extendido de sección venta B2B -->
+  <section
+    class="bg-slate-800 p-6 rounded-2xl max-w-6xl mx-auto mb-12 shadow-xl"
+  >
+    <h2 class="text-2xl sm:text-3xl text-amber-400 font-bold mb-4 text-center">
+      Venta B2B
+    </h2>
+    <p class="text-gray-300 mb-6 text-center max-w-3xl mx-auto">
+      Proveemos impresoras 3D, repuestos, filamento PLA/ABS/resina, soluciones
+      de mantenimiento y asesoría técnica. Trabajamos con emprendedores,
+      talleres, escuelas y empresas que buscan crecer con impresión 3D.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <img
+        src="/galeria/impresora-3d.jpg"
+        alt="Venta de impresoras 3D"
+        class="rounded-xl shadow-lg"
+      />
+      <img
+        src="/galeria/filamentos.jpg"
+        alt="Filamentos PLA/ABS"
+        class="rounded-xl shadow-lg"
+      />
+      <img
+        src="/galeria/servicio-tecnico.jpg"
+        alt="Servicio técnico 3D"
+        class="rounded-xl shadow-lg"
+      />
+    </div>
+  </section>
+
+  <!-- Separador con ícono de descarga -->
+  <div class="flex justify-center my-8">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-10 h-10 text-amber-500 animate-bounce transition-transform duration-300 hover:scale-110 hover:text-yellow-400"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M12 4v12m0 0l-4-4m4 4l4-4m-6 6h8a2 2 0 002-2V7a2 2 0 00-2-2H9.5"
+      ></path>
+    </svg>
+  </div>
+  <!-- Bloque extendido de sección modelos STL y OBJ -->
+  <section
+    class="bg-slate-800 p-6 rounded-2xl max-w-6xl mx-auto mb-12 shadow-xl"
+  >
+    <h2 class="text-2xl sm:text-3xl text-amber-400 font-bold mb-4 text-center">
+      Modelos STL y OBJ
+    </h2>
+    <p class="text-gray-300 mb-6 text-center max-w-3xl mx-auto">
+      Tenemos un catálogo en constante expansión con diseños listos para
+      imprimir. Props, tokens, bustos, estructuras... Licencias propias y
+      también colaboraciones con artistas. Ideal para makers, coleccionistas y
+      estudios creativos.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <img
+        src="/galeria/modelos-stl.jpg"
+        alt="Modelos digitales STL"
+        class="rounded-xl shadow-lg"
+      />
+      <img
+        src="/galeria/modelos-obj.jpg"
+        alt="Modelos digitales OBJ"
+        class="rounded-xl shadow-lg"
+      />
+      <img
+        src="/galeria/catalogo-3d.jpg"
+        alt="Catálogo en línea"
+        class="rounded-xl shadow-lg"
+      />
+    </div>
+  </section>
+</BaseLayout>
