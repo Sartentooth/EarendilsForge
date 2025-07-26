@@ -12,6 +12,14 @@ export default {
         'theme-surface': 'var(--color-surface)',
         'theme-text': 'var(--color-text)',
         'theme-text-muted': 'var(--color-text-muted)',
+      },
+      // Gradientes personalizados
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-surface': 'var(--gradient-surface)',
+        'gradient-button': 'var(--gradient-button)',
+        'gradient-button-hover': 'var(--gradient-button-hover)',
       }
     },
   },

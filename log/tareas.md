@@ -37,7 +37,7 @@
   - [x] B2B - Impresoras 3D, insumos, etc
   - [x] Modelos 3D STL/OBJ
 - [x] `galeria.astro` — Showroom
-- [ ] `contacto.astro` — Formulario + WhatsApp
+- [x] `contacto.astro` — Formulario + WhatsApp
 
 ---
 
@@ -53,7 +53,7 @@
 
 ### 🚀 A futuro
 
-- [ ] Hacer deploy en GitHub Pages o Netlify
+- [x] Hacer deploy en GitHub Pages o Netlify
 - [ ] Agregar formulario funcional con Formspree o similar
 - [ ] Preparar sección blog (opcional)
 - [ ] Preparar carrito e-commerce (cuando se escale)

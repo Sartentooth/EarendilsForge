@@ -1,39 +1,37 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-const heroImage = "hero-forge.png";
-
+// Importamos la imagen de forma correcta para que funcione en dev y producción
+const heroImage = 'hero-forge.png';
 ---
 
 <BaseLayout>
-  <section class="relative bg-slate-950 text-white min-h-[80vh] flex items-center justify-center px-4">
+  <section class="relative bg-theme-bg text-white min-h-[80vh] flex items-center justify-center px-4">
     <div class="absolute inset-0 bg-cover bg-center opacity-20" style={`background-image: url(${heroImage})`}></div>
 
     <div class="relative z-10 text-center max-w-2xl">
-      <h1 class="text-4xl sm:text-6xl font-bold text-amber-400 drop-shadow-md">
-        Earendil’s Forge
+      <h1 class="text-4xl sm:text-6xl font-bold text-gradient drop-shadow-2xl mb-4">
+        Earendil's Forge
       </h1>
-      <p class="mt-4 text-lg sm:text-xl text-slate-200">
+      <p class="mt-4 text-lg sm:text-xl text-theme-text-muted">
         Forjamos ideas en 3D. Impresión, diseño y venta de insumos con alma fantástica.
       </p>
 
       <a
-        href="/contacto"
-        class="mt-8 inline-block bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-6 py-3 rounded-lg shadow-lg transition"
+        href="/EarendilsForge/contacto"
+        class="mt-8 inline-block btn-gradient text-white font-semibold px-8 py-4 rounded-lg shadow-xl transition-all transform hover:bg-gradient-button-hover"
       >
         Contactanos
       </a>
     </div>
   </section>
 
-  <section class="py-16 bg-slate-900 text-center text-white">
+  <section class="py-16 bg-gradient-surface text-center text-white">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-amber-400 mb-4">¿Qué hacemos?</h2>
-      <p class="text-lg text-slate-300">
+      <h2 class="text-3xl font-semibold text-gradient mb-4">¿Qué hacemos?</h2>
+      <p class="text-lg text-theme-text-muted">
         Desde piezas únicas hasta lotes industriales. Modelamos, imprimimos, asesoramos y conectamos.
         Ya sea para fanáticos del diseño, emprendedores o empresas, tenemos una forja para vos.
       </p>
     </div>
   </section>
 </BaseLayout>
-
