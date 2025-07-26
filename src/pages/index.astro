@@ -1,10 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const heroImage = "hero-forge.png";
+
 ---
 
 <BaseLayout>
   <section class="relative bg-slate-950 text-white min-h-[80vh] flex items-center justify-center px-4">
-    <div class="absolute inset-0 bg-[url('hero-forge.png')] bg-cover bg-center opacity-20"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-20" style={`background-image: url(${heroImage})`}></div>
 
     <div class="relative z-10 text-center max-w-2xl">
       <h1 class="text-4xl sm:text-6xl font-bold text-amber-400 drop-shadow-md">

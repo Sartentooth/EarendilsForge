@@ -44,9 +44,9 @@
 ### 🧩 Componentes y extras
 
 - [ ] Crear tarjetas reutilizables para productos (`Card.astro`)
-- [ ] Insertar galería responsive de imágenes
+- [x] Insertar galería responsive de imágenes
 - [ ] Botón flotante de WhatsApp
-- [ ] Favicon e íconos personalizados
+- [x] Favicon e íconos personalizados
 - [ ] Ajustes básicos de SEO (título, descripción)
 
 ---
