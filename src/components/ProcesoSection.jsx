@@ -191,7 +191,7 @@ const ProcesoSection = () => {
             ¿Tenés un proyecto en mente?
           </p>
           <a
-            href="/contacto"
+            href="/EarendilsForge/contacto"
             className="inline-flex items-center px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-2xl"
             style={{
               background: "var(--gradient-button)",
