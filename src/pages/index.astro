@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ProcesoSection from '../components/ProcesoSection.astro';
 // Importamos la imagen de forma correcta para que funcione en dev y producción
 const heroImage = 'hero-forge.png';
 ---
@@ -34,4 +35,5 @@ const heroImage = 'hero-forge.png';
       </p>
     </div>
   </section>
+  <ProcesoSection client:load />
 </BaseLayout>
