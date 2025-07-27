@@ -51,6 +51,17 @@
 
 ---
 
+### 🎨 Mejoras de UX/UI
+
+- [ ] Botón flotante de WhatsApp - clave para conversiones
+- [ ] Loading states y micro-animaciones épicas
+- [ ] Parallax scrolling en el hero principal
+- [ ] Hover states más elaborados en las cards de productos
+- [ ] Skeleton loading para imágenes de la galería
+- [ ] Modo de vista expandida (lightbox) para la galería
+
+---
+
 ### 🚀 A futuro
 
 - [x] Hacer deploy en GitHub Pages o Netlify
