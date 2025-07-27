@@ -4,6 +4,17 @@
 
 /* CSS Variables para cada tema - con los gradientes de la demo! */
 :root {
+
+    /* Fuentes personalizadas */
+  --font-title: 'Cinzel', serif;
+  --font-body: 'Crimson Text', serif;
+  
+  /* O si preferís nombres más específicos */
+  --h1-font: 'Cinzel', serif;
+  --h2-font: 'Cinzel', serif;
+  --p-font: 'Crimson Text', serif;
+  --text-font: 'Crimson Text', serif;
+
   /* Tema Amber (por defecto) */
   --color-primary: #f59e0b;
   --color-secondary: #fbbf24;
@@ -167,4 +178,12 @@
 .btn-gradient:hover {
   /*transform: translateY(-2px);*/
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
+
+p, body, div {
+  font-family: var(--font-body);
 }
