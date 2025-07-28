@@ -11,37 +11,37 @@ const UltimosTrabajos = () => {
   const trabajos = [
     {
       id: 1,
-      imagen: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=800&h=600&fit=crop",
+      imagen: "https://placehold.co/800x600/grey/white?text=Earendil%27s+Forge",
       titulo: "Figura de Dragón Épico",
       descripcion: "Impresión detallada con acabado metálico"
     },
     {
       id: 2,
-      imagen: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      imagen: "https://placehold.co/800x600/grey/white?text=Earendil%27s+Forge",
       titulo: "Armadura Funcional",
       descripcion: "Cosplay de alta calidad con articulaciones"
     },
     {
       id: 3,
-      imagen: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop",
+      imagen: "https://placehold.co/800x600/grey/white?text=Earendil%27s+Forge",
       titulo: "Miniatura de Castillo",
       descripcion: "Arquitectura medieval en escala perfecta"
     },
     {
       id: 4,
-      imagen: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
+      imagen: "https://placehold.co/800x600/grey/white?text=Earendil%27s+Forge",
       titulo: "Espada Ceremonial",
       descripción: "Metal y plástico combinados magistralmente"
     },
     {
       id: 5,
-      imagen: "https://images.unsplash.com/photo-1563089145-599997674d42?w=800&h=600&fit=crop",
+      imagen: "https://placehold.co/800x600/grey/white?text=Earendil%27s+Forge",
       titulo: "Joyería Fantástica",
       descripcion: "Anillos y amuletos con detalles imposibles"
     },
     {
       id: 6,
-      imagen: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop",
+      imagen: "https://placehold.co/800x600/grey/white?text=Earendil%27s+Forge",
       titulo: "Prototipos Industriales",
       descripcion: "Precisión técnica para empresas"
     }
@@ -145,18 +145,18 @@ const UltimosTrabajos = () => {
           >
             {/* Glow exterior múltiple */}
             <div 
-              className="absolute -inset-4 rounded-3xl opacity-75"
+              className="absolute -inset-4 rounded-3xl opacity-15"
               style={{
                 background: `
-                  conic-gradient(from 180deg at 50% 50%, 
+                  conic-gradient(from 180deg at 50% 60%, 
                     transparent, 
                     var(--color-primary), 
                     transparent, 
                     var(--color-secondary), 
                     transparent)
                 `,
-                filter: 'blur(20px)',
-                animation: 'spin 8s linear infinite reverse'
+                filter: 'blur(10px)',
+                animation: 'pulse 3s ease-in-out infinite alternate', 
               }}
             />
             
@@ -166,25 +166,12 @@ const UltimosTrabajos = () => {
               style={{
                 background: 'var(--gradient-surface)',
                 boxShadow: `
-                  inset 0 0 30px rgba(0,0,0,0.8),
+                  inset 0 0 30px rgba(0, 0, 0, 0.8),
                   0 0 60px var(--color-primary),
                   0 0 100px var(--color-primary)
                 `
               }}
             >
-              {/* Bruma interior más intensa */}
-              <div 
-                className="absolute inset-3 rounded-2xl opacity-40 pointer-events-none"
-                style={{
-                  background: `
-                    radial-gradient(ellipse at 30% 30%, var(--color-primary) 0%, transparent 50%),
-                    radial-gradient(ellipse at 70% 70%, var(--color-secondary) 0%, transparent 50%)
-                  `,
-                  filter: 'blur(25px)',
-                  animation: 'pulse 4s ease-in-out infinite alternate'
-                }}
-              />
-
               {/* Carrusel container */}
               <div 
                 className="relative rounded-2xl overflow-hidden z-10"
@@ -288,7 +275,7 @@ const UltimosTrabajos = () => {
         {/* CTA */}
         <div className="text-center mt-16">
           <a 
-            href="/galeria"
+            href="/EarendilsForge/galeria"
             className="inline-flex items-center px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-2xl"
             style={{
               background: 'var(--gradient-button)',

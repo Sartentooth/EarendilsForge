@@ -53,7 +53,7 @@
 
 ### 🎨 Mejoras de UX/UI
 
-- [ ] Botón flotante de WhatsApp - clave para conversiones
+- [x] Botón flotante de WhatsApp - clave para conversiones
 - [ ] Loading states y micro-animaciones épicas
 - [ ] Parallax scrolling en el hero principal
 - [ ] Hover states más elaborados en las cards de productos
