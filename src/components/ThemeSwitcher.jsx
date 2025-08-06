@@ -8,7 +8,7 @@ export default function ThemeSwitcher() {
 
   // Lista de todos los temas disponibles
   const themes = [
-    { id: 'amber', name: 'Amber Classic', icon: '🟡' },
+    { id: 'amber', name: "Earendil's", icon: '🟡' },
     { id: 'fire', name: 'Fire & Steel', icon: '🔥' },
     { id: 'mystic', name: 'Mystic Purple', icon: '✨' },
     { id: 'forest', name: 'Forest Green', icon: '🌲' },

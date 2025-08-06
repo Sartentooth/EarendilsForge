@@ -15,22 +15,22 @@
   --p-font: 'Crimson Text', serif;
   --text-font: 'Crimson Text', serif;
 
-  /* Tema Amber (por defecto) */
-  --color-primary: #f59e0b;
-  --color-secondary: #fbbf24;
-  --color-accent: #d97706;
-  --color-bg: #0f172a;
-  --color-surface: #1e293b;
-  --color-text: #ffffff;
-  --color-text-muted: #cbd5e1;
+/* Tema Earendil's Forge (por defecto) - Basado en tu paleta original */
+  --color-primary: #c7ae6a;    /* ecru - dorado principal */
+  --color-secondary: #939598;  /* battleship-gray - gris metálico */
+  --color-accent: #542580;     /* tekhelet - púrpura de acento */
+  --color-bg: #2d0259;         /* persian-indigo - fondo oscuro */
+  --color-surface: #510977;    /* indigo - superficies */
+  --color-text: #dbdede;       /* platinum - texto principal */
+  --color-text-muted: #b9babb; /* battleship-gray - texto secundario */
   
-  /* Gradientes Amber */
-  --gradient-primary: linear-gradient(to right, #f59e0b, #ea580c);
-  --gradient-hero: linear-gradient(to right, #f59e0b, #fbbf24);
-  --gradient-surface: linear-gradient(to bottom right, #1e293b, #334155);
-  --gradient-button: linear-gradient(to right, #f59e0b, #ea580c);
-  --gradient-button-hover: linear-gradient(to left , #f59e0b, #ea580c);
-  --gradient-text: linear-gradient(to right, #f59e0b, #fbbf24);
+  /* Gradientes Earendil's Forge */
+  --gradient-primary: linear-gradient(to right, #c7ae6a, #542580);
+  --gradient-hero: linear-gradient(to right, #c7ae6a, #939598, #542580);
+  --gradient-surface: linear-gradient(to bottom right, #2d0259, #510977);
+  --gradient-button: linear-gradient(to right, #c7ae6a, #542580);
+  --gradient-button-hover: linear-gradient(to left, #c7ae6a, #542580);
+  --gradient-text: linear-gradient(to right, #c7ae6a, #939598);
 }
 
 [data-theme="fire"] {
