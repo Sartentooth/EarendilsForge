@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 
 export default function ThemeSwitcher() {
-  const [currentTheme, setCurrentTheme] = useState('amber');
-  const [currentName, setCurrentName] = useState('Amber');
-  const [currentIcon, setCurrentIcon] = useState('🟡');
+  const [currentTheme, setCurrentTheme] = useState('earendil');
+  const [currentName, setCurrentName] = useState('Earendil\'s Forge');
+  const [currentIcon, setCurrentIcon] = useState('⚒️');
   const [isOpen, setIsOpen] = useState(false);
 
   // Lista de todos los temas disponibles
   const themes = [
-    { id: 'amber', name: "Earendil's", icon: '🟡' },
+    { id: 'earendil', name: "Earendil's Forge", icon: '⚒️' },
     { id: 'fire', name: 'Fire & Steel', icon: '🔥' },
     { id: 'mystic', name: 'Mystic Purple', icon: '✨' },
     { id: 'forest', name: 'Forest Green', icon: '🌲' },

@@ -8,8 +8,8 @@ export default function Header() {
     <nav className="px-3 py-6 sm:flex sm:items-center sm:justify-between bg-gradient-surface shadow-xl">
         <section className="flex justify-between items-center h-16">
           <a href="/EarendilsForge/" 
-          className="text-2xl font-bold text-[#c7ae6a] hover:scale-105 transition-transform flex items-center">
-            <img src="symbol.svg" width="80" height="auto" alt="logo Earendil's Forge" className="mr-2 p-2" />
+          className="text-2xl font-bold text-theme-primary hover:scale-105 transition-transform flex items-center">
+            <img src="/EarendilsForge/symbol.svg" width="80" height="auto" alt="logo Earendil's Forge" className="mr-2 p-2" />
             Earendil's Forge
           </a>
 
