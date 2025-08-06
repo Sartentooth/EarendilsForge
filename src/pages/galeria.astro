@@ -3,27 +3,37 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Galería">
-  <section class="max-w-7xl mx-auto px-4 py-12">
-    <h1 class="text-3xl sm:text-4xl font-bold text-amber-400 text-center mb-10">
+  <section
+    class="max-w-7xl mx-auto px-4 py-12"
+    style="background: var(--gradient-surface); color: var(--color-text);"
+  >
+    <h1
+      class="text-3xl sm:text-4xl font-bold text-center mb-10 text-gradient"
+      style="font-family: var(--font-title);"
+    >
       Showroom de Creaciones
     </h1>
 
     <!-- Filtros -->
     <div class="flex flex-wrap justify-center gap-4 mb-8">
       <button
-        class="filter-btn bg-slate-800 text-white px-4 py-2 rounded hover:bg-amber-500"
+        class="filter-btn px-4 py-2 rounded transition hover:transform hover:-translate-y-1"
+        style="background: var(--gradient-surface); color: var(--color-text); border: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body);"
         data-filter="all">Todo</button
       >
       <button
-        class="filter-btn bg-slate-800 text-white px-4 py-2 rounded hover:bg-amber-500"
+        class="filter-btn px-4 py-2 rounded transition hover:transform hover:-translate-y-1"
+        style="background: var(--gradient-surface); color: var(--color-text); border: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body);"
         data-filter="props">Props</button
       >
       <button
-        class="filter-btn bg-slate-800 text-white px-4 py-2 rounded hover:bg-amber-500"
+        class="filter-btn px-4 py-2 rounded transition hover:transform hover:-translate-y-1"
+        style="background: var(--gradient-surface); color: var(--color-text); border: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body);"
         data-filter="miniaturas">Miniaturas</button
       >
       <button
-        class="filter-btn bg-slate-800 text-white px-4 py-2 rounded hover:bg-amber-500"
+        class="filter-btn px-4 py-2 rounded transition hover:transform hover:-translate-y-1"
+        style="background: var(--gradient-surface); color: var(--color-text); border: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body);"
         data-filter="utilitarios">Utilitarios</button
       >
     </div>
@@ -74,25 +84,25 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         alt="Modelo 7"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
-        />
-        <img
+      />
+      <img
         src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
         alt="Modelo 8"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item utilitarios"
-        />
-        <img
+      />
+      <img
         src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
         alt="Modelo 9"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
-        />
-        <img
+      />
+      <img
         src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
         alt="Modelo 10"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
-        />
+      />
       <!-- Agregá más imágenes con sus clases correspondientes -->
     </div>
 

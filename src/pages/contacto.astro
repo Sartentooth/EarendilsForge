@@ -17,9 +17,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           type="text"
           name="nombre"
           placeholder="Ej: Eärendil Smith"
-          minlength="3"
           required
-          class="p-2 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+          minlength="3"
+          pattern="[A-Za-zÁÉÍÓÚÑáéíóúñ\s]{3,}"
+          class="p-2 rounded-md bg-theme-bg text-theme-text focus:outline-none focus:ring-2 focus:ring-amber-500"
         />
       </label>
 
@@ -30,7 +31,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           name="email"
           placeholder="tuemail@ejemplo.com"
           required
-          class="p-2 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          class="p-2 rounded-md bg-theme-bg text-theme-text focus:outline-none focus:ring-2 focus:ring-amber-500"
         />
       </label>
 
@@ -40,10 +43,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           type="tel"
           name="telefono"
           placeholder="+54 9 11 1234-5678"
+          required
           pattern="\+54\s9\s\d{2,4}\s\d{4}-\d{4}"
           title="Formato: +54 9 11 1234-5678"
-          required
-          class="p-2 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+          class="p-2 rounded-md bg-theme-bg text-theme-text focus:outline-none focus:ring-2 focus:ring-amber-500"
         />
       </label>
 
@@ -54,20 +57,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           rows="5"
           placeholder="Contanos tu idea, proyecto o duda..."
           required
-          class="p-2 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 resize-y"
+          minlength="10"
+          title="Por favor, ingresa al menos 10 caracteres."
+          class="p-2 rounded-md bg-theme-bg text-theme-text focus:outline-none focus:ring-2 focus:ring-amber-500 resize-y"
         ></textarea>
       </label>
 
       <div class="flex justify-between gap-4 mt-4">
         <button
           type="submit"
-          class="flex-1 py-2 rounded-md bg-amber-500 hover:bg-amber-600 text-white font-semibold transition"
+          class="flex-1 py-2 rounded-md bg-amber-500 hover:bg-amber-600 text-theme-text font-semibold transition"
         >
           Enviar
         </button>
         <button
           type="reset"
-          class="flex-1 py-2 rounded-md bg-gray-600 hover:bg-gray-700 text-white font-semibold transition"
+          class="flex-1 py-2 rounded-md bg-gray-600 hover:bg-gray-700 text-theme-text font-semibold transition"
         >
           Reset
         </button>
