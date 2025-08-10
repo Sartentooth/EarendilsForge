@@ -1,53 +1,323 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ProcesoSection from "../components/ProcesoSection.astro";
-import PorQueElegirnos from "../components/PorQueElegirnos.astro";
-import UltimosTrabajos from "../components/UltimosTrabajos.astro";
-
-// Importamos la imagen de forma correcta para que funcione en dev y producción
-const heroImage = "hero-forge.png";
+import ProductosTopCarousel from "../components/productos_top_carousel.astro";
+import CTABanner from "../components/cta_banner_component.astro";
+import B2BCircles from "../components/b2b_circles_component.astro";
+import ContactBanner from "../components/contact_banner_component.astro";
+import TestimoniosSection from "../components/testimonios_component.astro";
 ---
 
 <BaseLayout>
-  <section
-    class="relative bg-theme-bg text-theme-text min-h-[80vh] flex items-center justify-center px-4"
-  >
-    <div
-      class="absolute inset-0 bg-cover bg-center opacity-20"
-      style={`background-image: url(${heroImage})`}
-    >
-    </div>
-
-    <div class="relative z-10 text-center max-w-2xl">
-      <h1
-        class="text-4xl sm:text-6xl font-bold text-gradient drop-shadow-2xl mb-4"
-      >
-        Earendil's Forge
-      </h1>
-      <p class="mt-4 text-lg sm:text-xl text-theme-text-muted">
-        Forjamos ideas en 3D. Impresión, diseño y venta de insumos con alma
-        fantástica.
-      </p>
-
-      <a
-        href="/EarendilsForge/contacto"
-        class="mt-8 inline-block bg-gradient-button text-theme-text font-semibold px-8 py-4 rounded-lg shadow-xl transition-all transform hover:bg-gradient-button-hover"
-      >
-        Contactanos
-      </a>
+  <!-- Productos Top Carousel -->
+  <section class="py-12 bg-gradient-surface">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gradient mb-4"
+          style="font-family: var(--font-title);"
+        >
+          Nuestros Productos Más Buscados
+        </h2>
+        <p
+          class="text-lg text-theme-text-muted max-w-3xl mx-auto"
+          style="font-family: var(--font-body);"
+        >
+          Descubrí las creaciones que más enamoran a nuestros clientes
+        </p>
+      </div>
+      <ProductosTopCarousel />
     </div>
   </section>
 
-  <section class="py-16 bg-gradient-surface text-center text-theme-text">
+  <!-- ¿Qué hacemos? -->
+  <section class="py-16 bg-theme-bg text-center text-theme-text">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-gradient mb-4">¿Qué hacemos?</h2>
-      <p class="text-lg text-theme-text-muted">
+      <h2
+        class="text-3xl md:text-4xl font-semibold text-gradient mb-6"
+        style="font-family: var(--font-title);"
+      >
+        ¿Qué hacemos?
+      </h2>
+      <p
+        class="text-xl text-theme-text-muted leading-relaxed"
+        style="font-family: var(--font-body);"
+      >
         Modelamos, imprimimos y acompañamos cada paso. Si sos fanático del
-        diseño, estás emprendiendo o trabajás en una empresa, tenemos una forja
-        lista para darle forma a lo que imaginás.
+        diseño, seas particular, emprendedor o empresa, tenemos una forja lista
+        para darle forma a lo que imaginás.
       </p>
+
+      <!-- Iconos decorativos -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div class="text-center">
+          <div
+            class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center bg-gradient-primary"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gradient mb-2">Diseñamos</h3>
+          <p class="text-theme-text-muted">Modelado 3D personalizado</p>
+        </div>
+
+        <div class="text-center">
+          <div
+            class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center bg-gradient-primary"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gradient mb-2">Forjamos</h3>
+          <p class="text-theme-text-muted">Impresión de alta calidad</p>
+        </div>
+
+        <div class="text-center">
+          <div
+            class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center bg-gradient-primary"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gradient mb-2">Acompañamos</h3>
+          <p class="text-theme-text-muted">Soporte en cada proyecto</p>
+        </div>
+      </div>
     </div>
   </section>
-  <br>
-  <UltimosTrabajos />
+
+  <!-- Últimos Trabajos - Grid mejorado -->
+  <section class="py-20 px-4 bg-gradient-surface">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2
+          class="text-4xl md:text-5xl font-bold mb-6 text-gradient"
+          style="font-family: var(--font-title);"
+        >
+          Nuestros Últimos Trabajos
+        </h2>
+        <p
+          class="text-xl max-w-3xl mx-auto text-theme-text-muted"
+          style="font-family: var(--font-body);"
+        >
+          Cada pieza cuenta una historia. Desde dragones épicos hasta proyectos
+          personalizados para empresas y particulares.
+        </p>
+      </div>
+
+      <!-- Grid de trabajos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div
+          class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+        >
+          <img
+            src="https://placehold.co/400x300/grey/white?text=Dragon+Epic"
+            alt="Figura de Dragón Épico"
+            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+          <div
+            class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="text-xl font-bold">Figura de Dragón Épico</h3>
+            <p class="text-sm">Impresión detallada con acabado metálico</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+        >
+          <img
+            src="https://placehold.co/400x300/grey/white?text=Armadura+Funcional"
+            alt="Armadura Funcional"
+            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+          <div
+            class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="text-xl font-bold">Armadura Funcional</h3>
+            <p class="text-sm">Cosplay de alta calidad con articulaciones</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+        >
+          <img
+            src="https://placehold.co/400x300/grey/white?text=Miniatura+Castillo"
+            alt="Miniatura de Castillo"
+            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+          <div
+            class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="text-xl font-bold">Miniatura de Castillo</h3>
+            <p class="text-sm">Arquitectura medieval en escala perfecta</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+        >
+          <img
+            src="https://placehold.co/400x300/grey/white?text=Espada+Ceremonial"
+            alt="Espada Ceremonial"
+            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+          <div
+            class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="text-xl font-bold">Espada Ceremonial</h3>
+            <p class="text-sm">Metal y plástico combinados magistralmente</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+        >
+          <img
+            src="https://placehold.co/400x300/grey/white?text=Joyeria+Fantastica"
+            alt="Joyería Fantástica"
+            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+          <div
+            class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="text-xl font-bold">Joyería Fantástica</h3>
+            <p class="text-sm">Anillos y amuletos con detalles imposibles</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+        >
+          <img
+            src="https://placehold.co/400x300/grey/white?text=Proyecto+Personalizado"
+            alt="Proyecto Personalizado"
+            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+          <div
+            class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <h3 class="text-xl font-bold">Proyecto Personalizado</h3>
+            <p class="text-sm">
+              Soluciones a medida para empresas y particulares
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón ver más -->
+      <div class="text-center">
+        <a
+          href="/EarendilsForge/galeria"
+          class="inline-flex items-center px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-2xl bg-gradient-button text-white"
+          style="font-family: var(--font-title);"
+        >
+          Ver toda la galería
+          <svg
+            class="w-5 h-5 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <CTABanner />
+
+  <!-- Soluciones para empresas y particulares -->
+  <section class="py-20 px-4 bg-theme-bg">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2
+          class="text-4xl md:text-5xl font-bold mb-6 text-gradient"
+          style="font-family: var(--font-title);"
+        >
+          Soluciones para empresas y particulares
+        </h2>
+        <p
+          class="text-xl max-w-3xl mx-auto text-theme-text-muted"
+          style="font-family: var(--font-body);"
+        >
+          Equipamos tu negocio con la mejor tecnología de impresión 3D
+        </p>
+      </div>
+      <B2BCircles />
+      <!-- Este componente también debería ser revisado para textos internos -->
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <!-- <StatsSection client:load /> -->
+
+  <!-- Testimonios -->
+  <TestimoniosSection />
+
+  <!-- Contact Banner -->
+  <ContactBanner />
 </BaseLayout>

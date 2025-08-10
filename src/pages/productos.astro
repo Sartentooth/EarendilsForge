@@ -3,12 +3,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Productos y Servicios">
-  <section class="bg-slate-900 py-16 px-4 text-white">
+  <section class="bg-gradient-surface py-16 px-4 text-theme-text">
     <div class="max-w-6xl mx-auto text-center mb-12">
-      <h1 class="text-4xl font-bold text-amber-400 mb-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-gradient mb-4" style="font-family: var(--font-title);">
         Productos y Servicios
       </h1>
-      <p class="text-lg text-gray-300">
+      <p class="text-lg text-theme-text-muted" style="font-family: var(--font-body);">
         Forjamos experiencias únicas a través de la impresión 3D. Explorá todo
         lo que podemos hacer por vos.
       </p>
@@ -19,18 +19,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     >
       <!-- Tarjeta 1 -->
       <div
-        class="bg-slate-800 rounded-2xl shadow-md p-6 hover:bg-slate-700 transition"
+    class="bg-theme-bg rounded-2xl shadow-md p-6 hover:bg-gradient-surface transition"
       >
-        <h2 class="text-xl font-semibold text-amber-300 mb-2">
+  <h2 class="text-xl font-semibold text-gradient mb-2" style="font-family: var(--font-title);">
           🎮 Impresiones que nos gustan
         </h2>
-        <p class="text-sm text-gray-300 mb-4">
+  <p class="text-sm text-theme-text-muted mb-4" style="font-family: var(--font-body);">
           Figuras, props, espadas, miniaturas, piezas de coleccionismo. Diseños
           que amamos y queremos compartir.
         </p>
         <a
           href="#"
-          class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-4 py-2 rounded-md transition"
+          class="inline-block bg-gradient-button hover:opacity-90 text-white font-semibold px-4 py-2 rounded-md transition"
+          style="font-family: var(--font-title);"
         >
           Ver galería
         </a>
@@ -38,18 +39,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
       <!-- Tarjeta 2 -->
       <div
-        class="bg-slate-800 rounded-2xl shadow-md p-6 hover:bg-slate-700 transition"
+    class="bg-theme-bg rounded-2xl shadow-md p-6 hover:bg-gradient-surface transition"
       >
-        <h2 class="text-xl font-semibold text-amber-300 mb-2">
+  <h2 class="text-xl font-semibold text-gradient mb-2" style="font-family: var(--font-title);">
           🛠️ A pedido y trabajos únicos
         </h2>
-        <p class="text-sm text-gray-300 mb-4">
+  <p class="text-sm text-theme-text-muted mb-4" style="font-family: var(--font-body);">
           Traé tu idea o necesidad y la hacemos realidad. Modelado, impresión y
           acabado a medida.
         </p>
         <a
           href="#"
-          class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-4 py-2 rounded-md transition"
+          class="inline-block bg-gradient-button hover:opacity-90 text-white font-semibold px-4 py-2 rounded-md transition"
+          style="font-family: var(--font-title);"
         >
           Consultanos
         </a>
@@ -57,35 +59,36 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
       <!-- Tarjeta 3 -->
       <div
-        class="bg-slate-800 rounded-2xl shadow-md p-6 hover:bg-slate-700 transition"
+    class="bg-theme-bg rounded-2xl shadow-md p-6 hover:bg-gradient-surface transition"
       >
-        <h2 class="text-xl font-semibold text-amber-300 mb-2">🏭 Venta B2B</h2>
-        <p class="text-sm text-gray-300 mb-4">
-          Impresoras 3D, filamento PLA/ABS/Resina, kits de mantenimiento y más.
-          Soluciones para empresas o talleres.
-        </p>
-        <a
-          href="#"
-          class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-4 py-2 rounded-md transition"
-        >
-          Pedí info
-        </a>
+  <h2 class="text-xl font-semibold text-gradient mb-2" style="font-family: var(--font-title);">� Servicios mayoristas y soluciones para empresas y particulares</h2>
+  <p class="text-sm text-theme-text-muted mb-4" style="font-family: var(--font-body);">
+    Venta mayorista de insumos e impresoras 3D, filamento PLA/ABS/Resina, kits de mantenimiento y más. Soluciones a medida para negocios, oficinas, talleres, escuelas y particulares.
+  </p>
+  <a
+    href="#"
+    class="inline-block bg-gradient-button hover:opacity-90 text-white font-semibold px-4 py-2 rounded-md transition"
+    style="font-family: var(--font-title);"
+  >
+    Pedí info
+  </a>
       </div>
 
       <!-- Tarjeta 4 -->
       <div
-        class="bg-slate-800 rounded-2xl shadow-md p-6 hover:bg-slate-700 transition"
+    class="bg-theme-bg rounded-2xl shadow-md p-6 hover:bg-gradient-surface transition"
       >
-        <h2 class="text-xl font-semibold text-amber-300 mb-2">
+  <h2 class="text-xl font-semibold text-gradient mb-2" style="font-family: var(--font-title);">
           📦 Modelos STL y OBJ
         </h2>
-        <p class="text-sm text-gray-300 mb-4">
+  <p class="text-sm text-theme-text-muted mb-4" style="font-family: var(--font-body);">
           Venta de archivos digitales listos para imprimir. Creaciones propias y
           diseños con licencia de autor.
         </p>
         <a
           href="#"
-          class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-4 py-2 rounded-md transition"
+          class="inline-block bg-gradient-button hover:opacity-90 text-white font-semibold px-4 py-2 rounded-md transition"
+          style="font-family: var(--font-title);"
         >
           Ver catálogo
         </a>
@@ -112,18 +115,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   <!-- Bloque extendido de sección impresiones que nos gustan -->
   <section
-    class="bg-slate-800 p-6 rounded-2xl max-w-6xl mx-auto mb-12 shadow-xl"
+    class="bg-theme-bg p-6 rounded-2xl max-w-6xl mx-auto mb-12 shadow-xl"
   >
-    <h2 class="text-2xl sm:text-3xl text-amber-400 font-bold mb-4 text-center">
+  <h2 class="text-2xl sm:text-3xl text-gradient font-bold mb-4 text-center" style="font-family: var(--font-title);">
       Impresiones que nos gustan
     </h2>
-    <p class="text-gray-300 mb-6 text-center max-w-3xl mx-auto">
+  <p class="text-theme-text-muted mb-6 text-center max-w-3xl mx-auto" style="font-family: var(--font-body);">
       Este espacio es para mostrar lo que nos apasiona: props, miniaturas,
       espadas, bustos, piezas de coleccionismo y más. Diseños que amamos hacer y
       compartir. Porque la forja también es un lugar para crear con el alma.
     </p>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <img
         src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
         alt="Espada Zelda"
@@ -161,18 +164,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>
   <!-- Bloque extendido de sección a pedido y trabajos únicos -->
   <section
-    class="bg-slate-800 p-6 rounded-2xl max-w-6xl mx-auto mb-12 shadow-xl"
+    class="bg-theme-bg p-6 rounded-2xl max-w-6xl mx-auto mb-12 shadow-xl"
   >
-    <h2 class="text-2xl sm:text-3xl text-amber-400 font-bold mb-4 text-center">
+  <h2 class="text-2xl sm:text-3xl text-gradient font-bold mb-4 text-center" style="font-family: var(--font-title);">
       A pedido y trabajos únicos
     </h2>
-    <p class="text-gray-300 mb-6 text-center max-w-3xl mx-auto">
+  <p class="text-theme-text-muted mb-6 text-center max-w-3xl mx-auto" style="font-family: var(--font-body);">
       ¿Tenés una idea o un proyecto especial? Lo modelamos, lo adaptamos y lo
       imprimimos en la mejor calidad. Props personalizados, piezas funcionales o
       decorativas, miniaturas únicas... ¡Lo que imagines, lo forjamos!
     </p>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <img
         src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
         alt="Soporte casco personalizado"
@@ -208,17 +211,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       ></path>
     </svg>
   </div>
-  <!-- Bloque extendido de sección venta B2B -->
+  <!-- Bloque extendido de sección servicios mayoristas y soluciones para empresas y particulares -->
   <section
-    class="bg-slate-800 p-6 rounded-2xl max-w-6xl mx-auto mb-12 shadow-xl"
+    class="bg-theme-bg p-6 rounded-2xl max-w-6xl mx-auto mb-12 shadow-xl"
   >
-    <h2 class="text-2xl sm:text-3xl text-amber-400 font-bold mb-4 text-center">
-      Venta B2B
+    <h2 class="text-2xl sm:text-3xl text-gradient font-bold mb-4 text-center" style="font-family: var(--font-title);">
+      Servicios mayoristas y soluciones para empresas y particulares
     </h2>
-    <p class="text-gray-300 mb-6 text-center max-w-3xl mx-auto">
-      Proveemos impresoras 3D, repuestos, filamento PLA/ABS/resina, soluciones
-      de mantenimiento y asesoría técnica. Trabajamos con emprendedores,
-      talleres, escuelas y empresas que buscan crecer con impresión 3D.
+    <p class="text-theme-text-muted mb-6 text-center max-w-3xl mx-auto" style="font-family: var(--font-body);">
+      Ofrecemos venta mayorista de insumos e impresoras 3D, repuestos, filamento PLA/ABS/resina, soluciones de mantenimiento y asesoría técnica. Trabajamos con negocios, oficinas, talleres, escuelas y particulares que buscan crecer con impresión 3D.
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
