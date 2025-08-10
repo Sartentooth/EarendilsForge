@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const WhatsAppFloat = ({ phoneNumber = "+5491169645793", message = "¡Hola! Me interesa conocer más sobre Earendil's Forge" }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -93,7 +93,7 @@ const WhatsAppFloat = ({ phoneNumber = "+5491169645793", message = "¡Hola! Me i
       </button>
 
       {/* Estilo para la animación de pulso personalizada */}
-      <style jsx>{`
+      <style jsx="true">{`
         @keyframes pulse {
           0%, 100% {
             transform: scale(1);
