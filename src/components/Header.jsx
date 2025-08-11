@@ -1,5 +1,4 @@
-//import ThemeSwitcher from "./ThemeSwitcher.jsx";
-
+import ThemeSwitcher from "./ThemeSwitcher.jsx";
 import { useState } from "react";
 
 export default function Header() {
@@ -82,7 +81,7 @@ export default function Header() {
 
         {/* Theme Switcher */}
         <div className="mt-2 sm:mt-0 sm:ml-4">
-          {/* <ThemeSwitcher /> */}
+          <ThemeSwitcher />
         </div>
       </div>
     </nav>
