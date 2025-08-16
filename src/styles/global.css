@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* CSS Variables para cada tema - con los gradientes de la demo! */
 :root {
 
@@ -181,4 +192,29 @@ h1, h2, h3 {
 
 p, body, div {
   font-family: var(--font-body);
+}
+
+@media (max-width: 768px) {
+  /* Contenedor del texto y botón */
+  .relative > .absolute.bottom-0 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 1.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  /* Título */
+  .relative > .absolute.bottom-0 h2 {
+    font-size: 1.5rem; /* tamaño más pequeño para mobile */
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  /* Botón */
+  .relative > .absolute.bottom-0 button {
+    margin-top: 0.75rem;
+    margin-bottom: 20px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.875rem;
+  }
 }

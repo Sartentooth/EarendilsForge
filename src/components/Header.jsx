@@ -46,11 +46,11 @@ export default function Header() {
       <div
         className={`${
           open ? "block" : "hidden"
-        } sm:flex flex-col items-start mt-3 gap-4 sm:flex-row sm:m-0 sm:items-center`}
+        } sm:flex flex-col items-start mt-3 gap-4 sm:flex-row sm:m-0 sm:items-center font-bold uppercase text-sm sm:gap-6`}
       >
         <a
           href="/EarendilsForge/"
-          className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
+          className="block py-2 text-theme-text hover:text-theme-primary transition-colors" 
         >
           Inicio
         </a>

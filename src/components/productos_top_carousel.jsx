@@ -3,33 +3,40 @@ import { useEffect, useRef, useState } from "react";
 const ProductosTopCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
-  const [isZoomed, setIsZoomed] = useState(false);
   const intervalRef = useRef(null);
 
   const productos = [
     {
       id: 1,
-      nombre: "Dragón Articulado Premium",
-      precio: "$15,000",
-      imagen: "./galeria/galeria_img_dragon_articulado.webp",
+      nombre: "Filamentos e Insumos",
+      imagen:
+        "/EarendilsForge/galeria/desktop/hero-insumos.webp",
+      imagenMobile:
+        "/EarendilsForge/galeria/mobile/hero-insumos-mobile.webp",
     },
     {
       id: 2,
-      nombre: "Tigres Articulados Premium",
-      precio: "$25,000",
-      imagen: "./galeria/galeria_img_tigres_articulados.webp",
+      nombre: "Stormtrooper Articulados",
+      imagen:
+        "/EarendilsForge/galeria/desktop/hero-storntroopers.webp",
+      imagenMobile:
+        "/EarendilsForge/galeria/mobile/hero-storntroopers-mobile.webp",
     },
     {
       id: 3,
-      nombre: "Set Miniaturas D&D",
-      precio: "$8,500",
-      imagen: "./galeria/galeria_img_minis_d&d_set.webp",
+      nombre: "Mascotas Personalizadas",
+      imagen:
+        "/EarendilsForge/galeria/desktop/hero-mascotas.webp",
+      imagenMobile:
+        "/EarendilsForge/galeria/mobile/hero-mascotas-mobile.webp",
     },
     {
       id: 4,
-      nombre: "Malla Bandera Argentina",
-      precio: "$8,500",
-      imagen: "./galeria/galeria_img_bandera_argentina_malla.webp",
+      nombre: "Impresoras 3D",
+      imagen:
+        "/EarendilsForge/galeria/desktop/hero-impresoras.webp",
+      imagenMobile:
+        "/EarendilsForge/galeria/mobile/hero-impresoras-mobile.webp",
     },
   ];
 
@@ -46,27 +53,40 @@ const ProductosTopCarousel = () => {
     setCurrentIndex((prev) => (prev + 1) % productos.length);
   const prevSlide = () =>
     setCurrentIndex((prev) => (prev - 1 + productos.length) % productos.length);
+  const goToSlide = (index) => setCurrentIndex(index);
 
   return (
-<div className="relative w-full max-w-[1024px] mx-auto">
-  {/* Imagen */}
-  <div
-    className="relative h-64 sm:h-80 md:h-[60vh] lg:h-[75vh] overflow-hidden rounded-2xl shadow-lg cursor-pointer"
-    onMouseEnter={() => setIsAutoPlay(false)}
-    onMouseLeave={() => setIsAutoPlay(true)}
-    onClick={() => setIsZoomed(true)}
-  >
-    <img
-      src={productos[currentIndex].imagen}
-      alt={productos[currentIndex].nombre}
-      className="w-full h-full object-contain rounded-2xl transition-all duration-700"
-    />
-        {/* Botón en la esquina */}
+    <div className="relative w-full overflow-hidden min-h-[55vh] md:min-h-[70vh]">
+      {/* Badge con animación */}
+      <div className="absolute top-4 left-4 bg-black/40 backdrop-blur-sm text-white px-4 py-1 rounded-full text-xs md:text-sm uppercase tracking-widest z-20 animate-[fadeSlideIn_0.6s_ease-out]">
+        Más buscados
+      </div>
+
+      {/* Imagen de fondo */}
+      <div
+        className="absolute inset-0 transition-all duration-1000 ease-out"
+        onMouseEnter={() => setIsAutoPlay(false)}
+        onMouseLeave={() => setIsAutoPlay(true)}
+      >
+        <img
+          src={productos[currentIndex].imagen}
+          alt={productos[currentIndex].nombre}
+          className="w-full h-full object-cover "
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-black/15 to-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+      </div>
+
+      {/* Contenido */}
+      <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-12 flex sm:items-center md:items-start flex-col gap-3 max-w-3xl">
+        <h2 className="text-2xl md:text-4xl font-extrabold text-white drop-shadow-lg leading-tight">
+          {productos[currentIndex].nombre}
+        </h2>
+
         <button
-          className="absolute bottom-4 right-4 bg-black/60 text-white px-4 py-2 rounded-lg text-sm hover:bg-black/80 transition"
-          onClick={(e) => {
-            e.stopPropagation();
-            const phoneNumber = "+5491169645793"; // número con código de país (ejemplo Argentina)
+          className="relative px-8 py-3 border border-white text-white uppercase tracking-wider font-semibold overflow-hidden transition-all duration-300 group"
+          onClick={() => {
+            const phoneNumber = "+5491169645793";
             const message = encodeURIComponent(
               `Hola! Quiero consultar por el producto: ${productos[currentIndex].nombre}`
             );
@@ -76,87 +96,40 @@ const ProductosTopCarousel = () => {
             );
           }}
         >
-          COMPRAR
+          <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+          <span className="absolute left-0 top-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full delay-150"></span>
+          <span className="absolute right-0 top-0 w-[2px] h-0 bg-white transition-all duration-300 group-hover:h-full delay-300"></span>
+          <span className="absolute left-0 bottom-0 w-[2px] h-0 bg-white transition-all duration-300 group-hover:h-full"></span>
+          <span className="relative z-10">Consultar</span>
         </button>
       </div>
 
       {/* Controles */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg z-10"
-        style={{ background: "transparent" }}
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/40 backdrop-blur-sm text-white hover:bg-black/60 transition-all duration-300"
       >
-        <svg
-          className="w-6 h-6 text-white"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
+        &#10094;
       </button>
-
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg z-10"
-        style={{ background: "transparent" }}
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/40 backdrop-blur-sm text-white hover:bg-black/60 transition-all duration-300"
       >
-        <svg
-          className="w-6 h-6 text-white"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
+        &#10095;
       </button>
 
       {/* Indicadores */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3 z-10">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
         {productos.map((_, index) => (
-          <button
+          <span
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentIndex ? "scale-125" : "scale-100 opacity-60"
+            className={`cursor-pointer h-1 rounded-full transition-all duration-300 ${
+              index === currentIndex ? "w-10 bg-white" : "w-4 bg-white/50"
             }`}
-            style={{
-              background:
-                index === currentIndex
-                  ? "var(--color-primary)"
-                  : "rgba(255,255,255,0.5)",
-              boxShadow:
-                index === currentIndex
-                  ? `0 0 15px var(--color-primary)`
-                  : "none",
-            }}
           />
         ))}
       </div>
-
-      {/* Modal zoom */}
-      {isZoomed && (
-        <div
-          className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
-          onClick={() => setIsZoomed(false)}
-        >
-          <img
-            src={productos[currentIndex].imagen}
-            alt={productos[currentIndex].nombre}
-            className="max-w-full max-h-full rounded-lg"
-          />
-        </div>
-      )}
     </div>
   );
 };
