@@ -14,9 +14,8 @@ const B2BCircles = () => {
       ),
       descripcion: 'Equipos profesionales de última generación',
       detalles: [
-        'Impresoras FDM desde $180,000',
-        'Impresoras de Resina desde $85,000', 
-        'Equipos industriales disponibles',
+        'Impresoras FDM desde Consultar',
+        'Impresoras de Resina desde Consultar', 
         'Garantía extendida y soporte técnico',
         'Capacitación incluida'
       ],
@@ -32,11 +31,11 @@ const B2BCircles = () => {
       ),
       descripcion: 'Materiales premium para cada aplicación',
       detalles: [
-        'PLA+ desde $3,200/kg - Ideal para principiantes',
-        'ABS Professional $3,800/kg - Resistente al calor',
-        'PETG Cristal $4,200/kg - Transparente y fuerte',
-        'TPU Flexible $5,500/kg - Para objetos elásticos',
-        'Resinas especializadas desde $8,000/L'
+        'PLA+ - Ideal para principiantes',
+        'ABS Professional - Resistente al calor',
+        'PETG Cristal - Transparente y fuerte',
+        'TPU Flexible - Para objetos elásticos',
+        'Resinas especializadas desde '
       ],
       color: '#059669'
     },
@@ -51,11 +50,11 @@ const B2BCircles = () => {
       ),
       descripcion: 'Todo lo que necesitás para mantener tu equipo',
       detalles: [
-        'Nozzles de acero endurecido - $800 c/u',
-        'Camas calientes de repuesto - desde $4,500',
-        'Motores paso a paso - $2,200 c/u',
-        'Sensores de filamento - $1,100',
-        'Kits de mantenimiento completos'
+        'Nozzles de acero endurecido - Consultar',
+        'Camas calientes de repuesto - Consultar',
+        'Motores paso a paso - Consultar',
+        'Sensores de filamento - Consultar',
+        'Kits de mantenimiento Consultar'
       ],
       color: '#7c3aed'
     },
