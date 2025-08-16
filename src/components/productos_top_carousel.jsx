@@ -70,6 +70,11 @@ const ProductosTopCarousel = () => {
       >
         <img
           src={productos[currentIndex].imagen}
+          srcSet={`
+          ${productos[currentIndex].imagenMobile} 720w,
+          ${productos[currentIndex].imagen} 2513w
+          `}
+          sizes="(max-width: 768px) 0px, 2351px"
           alt={productos[currentIndex].nombre}
           className="w-full h-full object-cover "
         />

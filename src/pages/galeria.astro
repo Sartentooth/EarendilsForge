@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import GalleryScript from "../components/galleryScript.astro";
 ---
 
 <BaseLayout title="Galería">
@@ -11,7 +12,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       class="text-3xl sm:text-4xl font-bold text-center mb-10 text-gradient"
       style="font-family: var(--font-title);"
     >
-      Showroom de Creaciones
+      Galeria de Creaciones
     </h1>
 
     <!-- Filtros -->
@@ -21,7 +22,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         style="background: var(--gradient-surface); color: var(--color-text); border: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body);"
         data-filter="all">Todo</button
       >
-      <button
+      <!-- <button
         class="filter-btn px-4 py-2 rounded transition hover:transform hover:-translate-y-1"
         style="background: var(--gradient-surface); color: var(--color-text); border: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body);"
         data-filter="props">Props</button
@@ -35,7 +36,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         class="filter-btn px-4 py-2 rounded transition hover:transform hover:-translate-y-1"
         style="background: var(--gradient-surface); color: var(--color-text); border: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body);"
         data-filter="utilitarios">Utilitarios</button
-      >
+      > -->
     </div>
 
     <!-- Galería -->
@@ -44,61 +45,238 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
     >
       <img
-        src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
+        src="/EarendilsForge/galeria/gallery/galeria-accesorios.jpg"
         alt="Modelo 1"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
       />
       <img
-        src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
+        src="/EarendilsForge/galeria/gallery/galeria-alien-glow-1.jpg"
         alt="Modelo 2"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item miniaturas"
       />
       <img
-        src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
+        src="/EarendilsForge/galeria/gallery/galeria-alien-glow.jpg"
         alt="Modelo 3"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item utilitarios"
       />
       <img
-        src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
+        src="/EarendilsForge/galeria/gallery/galeria-appa.jpg"
         alt="Modelo 4"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
       />
       <img
-        src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
+        src="/EarendilsForge/galeria/gallery/galeria-baby-yoda.jpg"
         alt="Modelo 5"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item miniaturas"
       />
       <img
-        src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
+        src="/EarendilsForge/galeria/gallery/galeria-bandera-ar.jpg"
         alt="Modelo 6"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item utilitarios"
       />
       <img
-        src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
+        src="/EarendilsForge/galeria/gallery/galeria-dragon-esqueleto.jpg"
         alt="Modelo 7"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
       />
       <img
-        src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
+        src="/EarendilsForge/galeria/gallery/galeria-dragon.jpg"
         alt="Modelo 8"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item utilitarios"
       />
       <img
-        src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
+        src="/EarendilsForge/galeria/gallery/galeria-dragoncito.jpg"
         alt="Modelo 9"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
       />
       <img
-        src="https://placehold.co/600x400/orange/white?text=Earendil%27s+Forge"
+        src="/EarendilsForge/galeria/gallery/galeria-figura-1.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-figura-2.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-figura-3.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-humanoide.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-jesus.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-lechuza-oso.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-llaveros.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-mando.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-mascota-1.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-mascota-2.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-mascota-3.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-mascota-4.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-mascota-5.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-mascota-6.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-mascota-7.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-mascota-8.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-mascota-9.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-minis-1.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-minis-2.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-minis-3.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-minis-4.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-minis-5.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-minis-6.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-props.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-storntroopers.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-tie-fighter.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+      <img
+        src="/EarendilsForge/galeria/gallery/galeria-utilitario.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />
+            <img
+        src="/EarendilsForge/galeria/gallery/galeria-figura-4.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />      <img
+        src="/EarendilsForge/galeria/gallery/galeria-llaveros-1.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />      <img
+        src="/EarendilsForge/galeria/gallery/galeria-llaveros-pedido.jpg"
+        alt="Modelo 10"
+        loading="lazy"
+        class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
+      />      <img
+        src="/EarendilsForge/galeria/gallery/galeria-props-1.jpg"
         alt="Modelo 10"
         loading="lazy"
         class="rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 filter-item props"
@@ -111,25 +289,5 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       en redes!
     </p>
   </section>
-
-  <!-- Script para filtrar -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const buttons = document.querySelectorAll(".filter-btn");
-      const items = document.querySelectorAll(".filter-item");
-
-      buttons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const filter = btn.getAttribute("data-filter") || "";
-          items.forEach((item) => {
-            if (filter === "all" || item.classList.contains(filter)) {
-              item.classList.remove("hidden");
-            } else {
-              item.classList.add("hidden");
-            }
-          });
-        });
-      });
-    });
-  </script>
+  <GalleryScript />
 </BaseLayout>
