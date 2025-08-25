@@ -5,6 +5,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import WhatsAppFloat from "../components/WhatsAppFloat.astro";
 import { ViewTransitions } from "astro:transitions";
+import { withBase } from "../utils/base";
 ---
 
 <html lang="es">
@@ -15,7 +16,7 @@ import { ViewTransitions } from "astro:transitions";
       name="description"
       content="Earendil's Forge – Impresión 3D, insumos y creatividad fantástica."
     />
-    <link rel="icon" rel="preload" href="/EarendilsForge/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" rel="preload" href={withBase("favicon.svg")} type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
