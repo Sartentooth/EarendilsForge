@@ -1,3 +1,7 @@
+---
+import { withBase } from "../utils/base";
+---
+
 <footer class="pb-16 md:pb-4 bg-gradient-surface mt-12 text-gray-400">
   <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col items-center">
     {/* Logo grande y centrado */}
@@ -6,7 +10,7 @@
       {/* Tamaño mediano: w-32 */}
       {/* Tamaño grande: w-40 */}
       <img
-        src="/EarendilsForge/Color-logo-no-background.png"
+        src={withBase("Color-logo-no-background.png")}
         alt="Earendil's Forge logo"
         class="w-40 h-auto mx-auto rounded-md"
       />
@@ -14,19 +18,19 @@
 
     {/* Mini menú horizontal */}
     <nav class="flex space-x-8 mb-4 text-gray-300 font-semibold tracking-wide">
-      <a href="/EarendilsForge/" class="hover:text-white transition-colors"
+      <a href={withBase("")} class="hover:text-white transition-colors"
         >Inicio</a
       >
       <a
-        href="/EarendilsForge/productos"
+        href={withBase("productos")}
         class="hover:text-white transition-colors">Productos</a
       >
       <a
-        href="/EarendilsForge/quienes-somos"
+        href={withBase("quienes-somos")}
         class="hover:text-white transition-colors">Quiénes somos</a
       >
       <a
-        href="/EarendilsForge/contacto"
+        href={withBase("contacto")}
         class="hover:text-white transition-colors">Contacto</a
       >
     </nav>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { withBase } from '../utils/base';
 
 const CTABanner = () => {
   return (
@@ -69,7 +70,7 @@ const CTABanner = () => {
           {/* Botones de acción */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="/EarendilsForge/productos"
+              href={withBase("productos")}
               className="inline-flex items-center px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-2xl bg-white text-gray-900"
               style={{fontFamily: 'var(--font-title)'}}
             >
@@ -80,7 +81,7 @@ const CTABanner = () => {
             </a>
             
             <a 
-              href="/EarendilsForge/contacto"
+              href={withBase("contacto")}
               className="inline-flex items-center px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-2xl bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900"
               style={{fontFamily: 'var(--font-title)'}}
             >

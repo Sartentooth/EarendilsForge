@@ -1,5 +1,6 @@
 import ThemeSwitcher from "./ThemeSwitcher.jsx";
 import { useState } from "react";
+import { withBase } from "../utils/base";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -8,11 +9,11 @@ export default function Header() {
     <nav className="px-3 py-6 sm:flex sm:items-center sm:justify-between bg-gradient-surface shadow-xl">
       <section className="flex justify-between items-center h-16">
         <a
-          href="/EarendilsForge/"
+          href={withBase("")}
           className="text-2xl font-bold text-theme-primary hover:scale-105 transition-transform flex items-center"
         >
           <img
-            src="/EarendilsForge/symbol.svg"
+            src={withBase("symbol.svg")}
             width="80"
             height="auto"
             alt="logo Earendil's Forge"
@@ -49,31 +50,31 @@ export default function Header() {
         } sm:flex flex-col items-start mt-3 gap-4 sm:flex-row sm:m-0 sm:items-center font-bold uppercase text-sm sm:gap-6`}
       >
         <a
-          href="/EarendilsForge/"
+          href={withBase("")}
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors" 
         >
           Inicio
         </a>
         <a
-          href="/EarendilsForge/quienes-somos"
+          href={withBase("quienes-somos")}
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
           Quiénes somos
         </a>
         <a
-          href="/EarendilsForge/productos"
+          href={withBase("productos")}
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
           Productos
         </a>
         <a
-          href="/EarendilsForge/galeria"
+          href={withBase("galeria")}
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
           Galería
         </a>
         <a
-          href="/EarendilsForge/contacto"
+          href={withBase("contacto")}
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
           Contacto

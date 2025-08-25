@@ -17,7 +17,7 @@ const ProductosTopCarousel = () => {
     {
       id: 2,
       nombre: "Stormtrooper Articulados",
-      imagen: withBase("galeria/desktop/hero-stormtroopers.webp"),
+      imagen: withBase("galeria/desktop/hero-storntroopers.webp"),
       imagenMobile: withBase("galeria/mobile/hero-stormtroopers-mobile.webp"),
     },
     {

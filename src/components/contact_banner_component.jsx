@@ -1,4 +1,5 @@
 import React from "react";
+import { withBase } from "../utils/base";
 
 // Componente de sección de llamada a la acción (CTA)
 
@@ -159,7 +160,7 @@ const CTASection = () => {
         {/* Botones principales */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a
-            href="/EarendilsForge/contacto"
+            href={withBase("contacto")}
             className="inline-flex items-center px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-2xl bg-gradient-button text-white"
             style={{ fontFamily: "var(--font-title)" }}
           >
