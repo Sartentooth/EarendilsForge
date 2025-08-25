@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { withBase } from '../utils/base';
+
 const B2BCircles = () => {
   const [activeCircle, setActiveCircle] = useState(null);
 
@@ -14,8 +16,8 @@ const B2BCircles = () => {
       ),
       descripcion: 'Equipos profesionales de última generación',
       detalles: [
-        'Impresoras FDM desde Consultar',
-        'Impresoras de Resina desde Consultar', 
+        'Impresoras FDM',
+        'Impresoras de Resina', 
         'Garantía extendida y soporte técnico',
         'Capacitación incluida'
       ],
@@ -35,7 +37,7 @@ const B2BCircles = () => {
         'ABS Professional - Resistente al calor',
         'PETG Cristal - Transparente y fuerte',
         'TPU Flexible - Para objetos elásticos',
-        'Resinas especializadas desde '
+        'Resinas especializadas'
       ],
       color: '#059669'
     },
@@ -227,7 +229,7 @@ const B2BCircles = () => {
                   </p>
                   <div className="space-y-3">
                     <a 
-                      href="/EarendilsForge/contacto"
+                      href={withBase("contacto")}
                       className="block w-full py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
                       style={{ 
                         background: `linear-gradient(135deg, ${servicios.find(s => s.id === activeCircle).color}, ${servicios.find(s => s.id === activeCircle).color}aa)`,

@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
+import { withBase } from "../utils/base";
+
 const ProductosTopCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
@@ -9,34 +11,26 @@ const ProductosTopCarousel = () => {
     {
       id: 1,
       nombre: "Filamentos e Insumos",
-      imagen:
-        "/EarendilsForge/galeria/desktop/hero-insumos.webp",
-      imagenMobile:
-        "/EarendilsForge/galeria/mobile/hero-insumos-mobile.webp",
+      imagen: withBase("galeria/desktop/hero-insumos.webp"),
+      imagenMobile: withBase("galeria/mobile/hero-insumos-mobile.webp"),
     },
     {
       id: 2,
       nombre: "Stormtrooper Articulados",
-      imagen:
-        "/EarendilsForge/galeria/desktop/hero-storntroopers.webp",
-      imagenMobile:
-        "/EarendilsForge/galeria/mobile/hero-storntroopers-mobile.webp",
+      imagen: withBase("galeria/desktop/hero-stormtroopers.webp"),
+      imagenMobile: withBase("galeria/mobile/hero-stormtroopers-mobile.webp"),
     },
     {
       id: 3,
       nombre: "Mascotas Personalizadas",
-      imagen:
-        "/EarendilsForge/galeria/desktop/hero-mascotas.webp",
-      imagenMobile:
-        "/EarendilsForge/galeria/mobile/hero-mascotas-mobile.webp",
+      imagen: withBase("galeria/desktop/hero-mascotas.webp"),
+      imagenMobile: withBase("galeria/mobile/hero-mascotas-mobile.webp"),
     },
     {
       id: 4,
       nombre: "Impresoras 3D",
-      imagen:
-        "/EarendilsForge/galeria/desktop/hero-impresoras.webp",
-      imagenMobile:
-        "/EarendilsForge/galeria/mobile/hero-impresoras-mobile.webp",
+      imagen: withBase("galeria/desktop/hero-impresoras.webp"),
+      imagenMobile: withBase("galeria/mobile/hero-impresoras-mobile.webp"),
     },
   ];
 

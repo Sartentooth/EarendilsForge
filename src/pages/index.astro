@@ -5,6 +5,7 @@ import CTABanner from "../components/cta_banner_component.astro";
 import B2BCircles from "../components/b2b_circles_component.astro";
 import ContactBanner from "../components/contact_banner_component.astro";
 import TestimoniosSection from "../components/testimonios_component.astro";
+import { withBase } from "../utils/base";
 ---
 
 <BaseLayout>
@@ -130,7 +131,7 @@ import TestimoniosSection from "../components/testimonios_component.astro";
           class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
         >
           <img
-            src="/EarendilsForge/galeria/UT-figura-robot.jpg"
+            src={withBase("galeria/UT-figura-robot.jpg")}
             alt="Figura de Robot"
             class="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
           />
@@ -150,8 +151,8 @@ import TestimoniosSection from "../components/testimonios_component.astro";
           class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
         >
           <img
-            src="/EarendilsForge/galeria/UT-freddy.jpg"
-            alt="Armadura Funcional"
+            src={withBase("galeria/UT-freddy.jpg")}
+            alt="Freddy Krueger"
             class="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
           />
           <div
@@ -170,8 +171,8 @@ import TestimoniosSection from "../components/testimonios_component.astro";
           class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
         >
           <img
-            src="/EarendilsForge/galeria/UT-it-el-payaso.jpg"
-            alt="Miniatura de Castillo"
+            src={withBase("galeria/UT-it-el-payaso.jpg")}
+            alt="It El Payaso"
             class="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
           />
           <div
@@ -190,8 +191,8 @@ import TestimoniosSection from "../components/testimonios_component.astro";
           class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
         >
           <img
-            src="/EarendilsForge/galeria/UT-soporte-mobile-1.jpg"
-            alt="Espada Ceremonial"
+            src={withBase("galeria/UT-soporte-mobile-1.jpg")}
+            alt="Soprete para Celulares"
             class="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
           />
           <div
@@ -210,8 +211,8 @@ import TestimoniosSection from "../components/testimonios_component.astro";
           class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
         >
           <img
-            src="/EarendilsForge/galeria/UT-soporte-mobile-cerrado.jpg"
-            alt="Joyería Fantástica"
+            src={withBase("galeria/UT-soporte-mobile-cerrado.jpg")}
+            alt="Soporte para Celulares cerrado"
             class="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
           />
           <div
@@ -230,8 +231,8 @@ import TestimoniosSection from "../components/testimonios_component.astro";
           class="group relative overflow-hidden rounded-xl bg-theme-bg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
         >
           <img
-            src="/EarendilsForge/galeria/UT-soporte-mobile.jpg"
-            alt="Proyecto Personalizado"
+            src={withBase("galeria/UT-soporte-mobile.jpg")}
+            alt="Soprete para Celulares"
             class="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
           />
           <div
@@ -252,7 +253,7 @@ import TestimoniosSection from "../components/testimonios_component.astro";
       <!-- Botón ver más -->
       <div class="text-center">
         <a
-          href="/EarendilsForge/galeria"
+          href={withBase("galeria")}
           class="inline-flex items-center px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-2xl bg-gradient-button text-white"
           style="font-family: var(--font-title);"
         >
