@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../utils/base";
 ---
 
 <BaseLayout>
@@ -88,7 +89,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       Hablemos y forjemos juntos algo único. Nos encanta lo que hacemos, y más aún cuando lo hacemos con vos.
     </p>
     <a
-      href="/EarendilsForge/contacto"
+      href={withBase("contacto")}
       class="inline-block bg-gradient-button hover:opacity-90 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition"
       style="font-family: var(--font-title);"
     >
