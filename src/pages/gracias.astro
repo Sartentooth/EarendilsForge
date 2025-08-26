@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="¡Mensaje enviado!">
+  <section
+    class="max-w-xl mx-auto my-10 px-4 py-8 rounded-lg shadow-lg text-center"
+    style="background: var(--gradient-surface); color: var(--color-text);"
+  >
+    <div class="mb-6">
+      <svg class="w-16 h-16 text-green-500 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+      </svg>
+    </div>
+    
+    <h1
+      class="text-4xl font-bold mb-4 text-gradient"
+      style="font-family: var(--font-title);"
+    >
+      ¡Gracias por contactarnos!
+    </h1>
+    
+    <p
+      class="text-lg mb-6"
+      style="color: var(--color-text-muted); font-family: var(--font-body);"
+    >
+      Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo muy pronto.
+    </p>
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href="/"
+        class="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md transition"
+      >
+        Volver al inicio
+      </a>
+      
+      <a
+        href="https://wa.me/+5491169645793"
+        class="px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-md transition"
+        target="_blank"
+      >
+        WhatsApp directo
+      </a>
+    </div>
+  </section>
+</BaseLayout>
