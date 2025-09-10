@@ -51,17 +51,24 @@ export default function Header() {
       >
         <a
           href={withBase("")}
-          className="block py-2 text-theme-text hover:text-theme-primary transition-colors" 
+          className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
           Inicio
         </a>
+        <a
+          href={withBase("tienda")}
+          className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
+        >
+          Tienda
+        </a>
+
         <a
           href={withBase("quienes-somos")}
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
           Quiénes somos
         </a>
-        <a
+{/*         <a
           href={withBase("productos")}
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
@@ -72,13 +79,26 @@ export default function Header() {
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
           Galería
-        </a>
+        </a> */}
         <a
           href={withBase("contacto")}
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
           Contacto
         </a>
+
+        {/* Icono de carrito de compras*/}
+        
+        <div class="ec-cart-widget"></div>
+        <div>
+          <script
+            data-cfasync="false"
+            type="text/javascript"
+            src="https://app.ecwid.com/script.js?123615503&data_platform=code&data_date=2025-09-10"
+            charset="utf-8"
+          ></script>
+          <script type="text/javascript">Ecwid.init();</script>
+        </div>
 
         {/* Theme Switcher */}
         <div className="mt-2 sm:mt-0 sm:ml-4">

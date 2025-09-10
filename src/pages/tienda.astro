@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Galería">
+  <section
+    class="max-w-7xl mx-auto px-4 py-12"
+    style="background: var(--gradient-surface); color: var(--color-text);"
+  >
+    <h1
+      class="text-3xl sm:text-4xl font-bold text-center mb-10 text-gradient"
+      style="font-family: var(--font-title);"
+    >
+      Earendil's Forge Store
+    </h1>
+
+    <!-- Ecwid Store Integration -->
+
+    <!-- Menú de navegación por categorías -->
+     
+    <div id="my-categories-123615503"></div>
+    <div>
+      <script
+        data-cfasync="false"
+        type="text/javascript"
+        src="https://app.ecwid.com/script.js?123615503&data_platform=code&data_date=2025-09-10"
+        charset="utf-8"></script>
+      <script type="text/javascript">
+        xCategoriesV2("id=my-categories-123615503");
+      </script>
+    </div>
+
+    <!-- Ecwid Store widget -->
+
+    <div id="my-store-123615503"></div>
+    <div>
+      <script
+        data-cfasync="false"
+        type="text/javascript"
+        src="https://app.ecwid.com/script.js?123615503&data_platform=code&data_date=2025-09-10"
+        charset="utf-8"></script><script type="text/javascript">
+        xProductBrowser(
+          "categoriesPerRow=3",
+          "views=grid(20,3) list(60) table(60)",
+          "categoryView=grid",
+          "searchView=list",
+          "id=my-store-123615503"
+        );
+      </script>
+    </div>
+  </section>
+</BaseLayout>
