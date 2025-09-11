@@ -88,18 +88,7 @@ export default function Header() {
           Contacto
         </a>
 
-        {/* Icono de carrito de compras*/}
-
-        <div class="ec-cart-widget"></div>
-        <div>
-          <script
-            data-cfasync="false"
-            type="text/javascript"
-            src="https://app.ecwid.com/script.js?123615503&data_platform=code&data_date=2025-09-10"
-            charset="utf-8"
-          ></script>
-          <script type="text/javascript">Ecwid.init();</script>
-        </div>
+        {/* Carrito de Ecwid */}
 
         {/* Theme Switcher */}
         <div className="mt-2 sm:mt-0 sm:ml-4">
