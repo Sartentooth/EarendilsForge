@@ -57,6 +57,7 @@ export default function Header() {
         </a>
         <a
           href={withBase("tienda")}
+          data-astro-reload
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
           Tienda
@@ -68,7 +69,7 @@ export default function Header() {
         >
           Quiénes somos
         </a>
-{/*         <a
+        {/*         <a
           href={withBase("productos")}
           className="block py-2 text-theme-text hover:text-theme-primary transition-colors"
         >
@@ -88,7 +89,7 @@ export default function Header() {
         </a>
 
         {/* Icono de carrito de compras*/}
-        
+
         <div class="ec-cart-widget"></div>
         <div>
           <script

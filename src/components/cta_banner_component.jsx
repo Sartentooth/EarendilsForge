@@ -71,6 +71,7 @@ const CTABanner = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href={withBase("tienda")}
+              data-astro-reload
               className="inline-flex items-center px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-2xl bg-white text-gray-900"
               style={{fontFamily: 'var(--font-title)'}}
             >
