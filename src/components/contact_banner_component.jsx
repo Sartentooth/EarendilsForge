@@ -181,7 +181,7 @@ const CTASection = () => {
           </a>
 
           <a
-            href="https://wa.me/+5491169645793"
+            href="https://wa.me/+5491131067170"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-2xl border-2 hover:bg-gradient-button hover:text-white"

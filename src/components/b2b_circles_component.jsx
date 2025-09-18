@@ -239,7 +239,7 @@ const B2BCircles = () => {
                       Solicitar Cotización
                     </a>
                     <a 
-                      href="https://wa.me/+5491169645793"
+                      href="https://wa.me/+5491131067170"
                       target="_blank"
                       className="block w-full py-3 rounded-lg font-semibold border-2 transition-all duration-300 hover:scale-105"
                       style={{ 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const WhatsAppFloat = ({ phoneNumber = "+5491169645793", message = "¡Hola! Me interesa conocer más sobre Earendil's Forge" }) => {
+const WhatsAppFloat = ({ phoneNumber = "+5491131067170", message = "¡Hola! Me interesa conocer más sobre Earendil's Forge" }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
